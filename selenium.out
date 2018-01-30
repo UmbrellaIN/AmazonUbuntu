@@ -1,0 +1,12 @@
+2018-01-30 00:11:49 INFO  TestBase:162 - loading config.properties
+2018-01-30 00:11:49 INFO  TestBase:167 - loading or.properties
+2018-01-30 00:11:49 INFO  TestBase:173 - loading Amazon homepage.properties
+2018-01-30 00:11:49 INFO  TestBase:179 - loading guru99.properties
+2018-01-30 00:11:49 INFO  TestBase:185 - loading automation Loginpage .properties
+2018-01-30 00:11:49 INFO  TestBase:191 - loading Magneto webSite properties
+2018-01-30 00:11:49 INFO  TestBase:197 - loading Myntra webSite properties
+2018-01-30 00:11:49 INFO  TestBase:203 - loading GoIbibo webSite properties
+2018-01-30 00:11:49 INFO  TestBase:111 -  System returen user.dir as /home/ankit/eclipse-workspace/Amazon
+2018-01-30 00:11:59 INFO  WaitHelper:31 - 20
+2018-01-30 00:11:59 INFO  WaitHelper:36 - 240
+2018-01-30 00:11:59 INFO  VerifyVideoStreaming:21 - com.umbrella.Amazon.GuiTests.VerifyVideoStreaming Method verifyYouTube  Get Started

@@ -1,0 +1,5 @@
+2017-12-18 01:57:41 INFO  TestBase:114 - loading config.properties
+2017-12-18 01:57:41 INFO  TestBase:119 - loading or.properties
+2017-12-18 01:57:41 INFO  TestBase:124 - loading homepage.properties
+2017-12-18 01:57:46 INFO  WaitHelper:31 - 20
+2017-12-18 01:57:46 INFO  WaitHelper:36 - 240

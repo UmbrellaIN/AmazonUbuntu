@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="projectName" default="clean" basedir=".">
+	<!-- dot indicates that basedir is pointing towards project root directory -->
+
+	<!-- ========== Initialize Properties =================================== -->
+	<property name="ws.home" value="${basedir}" />
+	<property name="ws.jars" value="${ws.home}/Jars" />
+	<property name="test.dest" value="${ws.home}/build" />
+	<property name="test.src" value="${ws.home}" />
+	<property name="ng.result" value="test-output" />
+
+	<echo> value of base dir = ${basedir} </echo>
+
+	<!-- properties for copying the results -->
+	<tstamp>
+		<format property="year" pattern="yyyy" />
+		<format property="DSTAMP" pattern="yyyy-MM-dd" />
+		<format property="TSTAMP" pattern="HH:mm:ss" />
+		<format property="dateversion" pattern="yyyy.MM.dd.HH:mm:ss" />
+		<format property="time.stamp" pattern="yyyy-MM-dd_HH-mm-ss aa_" />
+	</tstamp>
+
+	<property name="testng.report.dir" value="${ws.home}/testngReports/${time.stamp}" />
+	<property name="testngXslt.report.dir" value="${ws.home}/testngXsltReports/${time.stamp}" />
+
+	<!-- ====== For setting the classpath ==== -->
+	<target name="setClassPath" unless="test.classpath">
+		<path id="classpath_jars">
+			<fileset dir="${ws.jars}" includes="*.jar" />
+		</path>
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+	</target>
+
+	<!-- ============ Initializing other stuff =========== -->
+	<target name="init" depends="setClassPath">
+		<tstamp>
+			<format property="start.time" pattern="MM-dd-yyyy (HH-mm-ss)" />
+		</tstamp>
+		<condition property="ANT" value="$(env.ANT_HOME)/bin/ant.bat"
+			else="$(env.ANT_HOME)/bin/ant">
+			<!-- os family="windows" / -->
+			<os family="mac" />
+		</condition>
+		<!-- download test NG jar file and provide path of test NG -->
+		<taskdef name="testng" classpath="${ws.home}/Jars/testng-6.13.1.jar"
+			classname="org.testng.TestNGAntTask" />
+	</target>
+
+	<target name="all">
+	</target>
+
+	<!-- cleaning the destination folders -->
+	<target name="clean">
+		<echo message="deleting existing build directory" />
+		<delete dir="${test.dest}" />
+	</target>
+
+	<!-- target for compiling the java files -->
+	<target name="compile" depends="init, clean">
+		<delete includeemptydirs="true" quiet="true">
+			<fileset dir="${test.dest}" includes="**/*" />
+		</delete>
+		<echo message="making directory....." />
+		<mkdir dir="${test.dest}" />
+		<echo message="classpath-------: ${test.classpath}" />
+		<echo message="compiling....." />
+		<javac debug="true" destdir="${test.dest}" srcdir="${test.src}"
+			classpath="${test.classpath}" includeantruntime="true" />
+	</target>
+
+	<!-- build -->
+	<target name="build" depends="init">
+	</target>
+
+	<!-- ========== Test executions & Generating reports using Testng utility 
+		for multiple suites ============== -->
+	<!-- run -->
+	<target name="run" depends="compile">
+		<!--suite begin -->
+		<testng classpath="${test.classpath}:${test.dest}" suitename="RiRegression"
+			outputDir="test-output">
+			<!-- write the testNG suite file name if build.xml and testNG suite file 
+				at same level -->
+			<xmlfileset dir="." includes="testng.xml" />
+			<!-- <xmlfileset dir="." includes="RegressionSuite.xml" /> <xmlfileset 
+				dir="." includes="testSuite1.xml" /> <xmlfileset dir="." includes="testSuite2.xml" 
+				/> -->
+		</testng>
+
+	</target>
+
+	<target name="testngReportCopyAndReportParser">
+		<!-- Copy to TestNG report directory -->
+		<mkdir dir="${testngDir}">
+		</mkdir>
+		<!-- to copy previous suite result to TestNG report directory -->
+		<copy todir="${testngDir}">
+			<fileset dir="test-output" />
+		</copy>
+		<!-- end of Testng Report -->
+	</target>
+
+
+	<!-- This section will generate xslt report -->
+	<!-- add SaxonLiaison.jar and saxon-8.7.jar to the build path of project -->
+	<!-- For XSLT report add "testng-results.xsl file to your project" -->
+
+	<target name="xslt" depends="run">
+		<delete dir="${testngXslt.report.dir}/testng-xslt">
+		</delete>
+		<mkdir dir="${testngXslt.report.dir}/testng-xslt">
+		</mkdir>
+		<xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/testng-results.xsl"
+			out="${testngXslt.report.dir}/testng-xslt/index.html">
+			<param expression="${testngXslt.report.dir}/testng-xslt/" name="testNgXslt.outputDir" />
+
+			<param expression="true" name="testNgXslt.sortTestCaseLinks" />
+
+			<param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+
+			<param expression="true" name="testNgXslt.showRuntimeTotals" />
+
+			<classpath refid="master-classpath">
+			</classpath>
+		</xslt>
+	</target>
+	<property name="LIB" value="${basedir}/Jars" />
+	<property name="BIN" value="${basedir}/bin" />
+	<path id="master-classpath">
+		<pathelement location="${BIN}" />
+		<fileset dir="${LIB}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+</project>

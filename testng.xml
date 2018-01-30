@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Master test suite">
+	<suite-files>
+		<!-- <suite-file path="testsuites/sanitysuite.xml"></suite-file> -->
+		<!-- <suite-file path="testsuites/RegressionSuite.xml"></suite-file> -->
+		<suite-file path="testsuites/guisuite.xml"></suite-file>
+		<!-- <suite-file path="testsuites/functionalSuite.xml"></suite-file> -->
+		<!-- <suite-file path="testsuites/genericsuite.xml"></suite-file> -->
+		<!-- <suite-file path="testsuites/RunningMethodsParallelSuite.xml"></suite-file> -->
+
+	</suite-files>
+</suite>
+

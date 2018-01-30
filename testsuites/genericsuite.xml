@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Generic Suite" parallel="tests" thread-count="2">
+
+	<!-- Uncomment Lister After LoginWithDataProvider check -->
+	<!-- <listeners> -->
+	<!-- <listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener> -->
+	<!-- </listeners> -->
+
+	<test name="VerifyVariousListBox">
+		<classes>
+			<class name="com.umbrella.Amazon.GenericTests.VerifyVariousListBox">
+				<methods>
+					<exclude name="verifyBootStrapListBox" />
+					<exclude name="verifyJQueryListBox" />
+					<include name="verifyDataListFilter" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="VerifyAllLinksAreActive"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GenericTests.VerifyAjaxCall" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="verifyDynamicData"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GenericTests.VerifyDynamicData" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifyVariousProgressBar"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GenericTests.VerifyVariousProgressBar"> -->
+	<!-- <methods> -->
+	<!-- <include name="verfiyBootStarpProgressBar" /> -->
+	<!-- <exclude name="verfiyBootStarpProgressBar1" /> -->
+	<!-- <exclude name="vefifyJqueryProgressBar" /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="verifyDragAndDrop"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GenericTests.VerifyDragAndDrop"> -->
+	<!-- <methods> -->
+	<!-- <include name="verifyDragAndDrop" /> -->
+	<!-- <exclude name="verifyDragAndDropSliders" /> -->
+	<!-- <exclude name="vefifyJqueryProgressBar" /> -->
+	<!-- </methods> -->
+	<!-- </class> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="verifyHandlingofVariousDateandTime"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GenericTests.VefifyVariousModalsAndAlert" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="Regression Suite VerifyLowestFirstPriceFilter"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.loginpage.VerifyLowestFirstPriceFilter" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+</suite> <!-- Suite -->
+
+
+
+

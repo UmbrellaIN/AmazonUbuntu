@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name=" Ruuning Methods Parallel of a class" parallel="methods" -->
+<!-- group-by-instances="false" object-factory="com.umbrella.Amazon.testCore.ObjectFactory"> -->
+
+
+<!-- The below line executes test on the same browser instance one by One -->
+<suite name=" Functional Suite" parallel="tests" thread-count="10"
+	group-by-instances="true">
+
+	<!-- <suite name=" Functional Suite" parallel="tests" thread-count="10"> -->
+
+	<!-- Uncomment Lister After LoginWithDataProvider check -->
+	<!-- <listeners> -->
+	<!-- <listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener> -->
+	<!-- </listeners> -->
+
+
+<!-- 	<test name="VerifyTableFilter"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.umbrella.Amazon.FunctionalTest.VerifyTableSearchFunctionality" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="VerifyTablePagination"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.umbrella.Amazon.FunctionalTest.VerifyTablePagination" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+<!-- 	<test name="VerifyTableSortandSearch"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.umbrella.Amazon.FunctionalTest.VerifyTableSortingFunctionality" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+	<test name="VerifyTableDataDownload">
+		<classes>
+			<class name="com.umbrella.Amazon.FunctionalTest.VerifyTableDownloadPrintSearch" />
+		</classes>
+	</test>
+
+<!-- 	<test name="VerifyTableDataSearch"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.umbrella.Amazon.FunctionalTest.VerifyTableGridSearchBox" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+	<!-- <test name="instances"> -->
+	<!-- <packages> -->
+	<!-- <package name="com.umbrella.Amazon.FunctionalTest.*"/> -->
+	<!-- </packages> -->
+	<!-- </test> -->
+
+
+</suite> <!-- Suite -->
+
+
+
+

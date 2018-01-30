@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" GUI Suite" parallel="tests" thread-count="2">
+
+	<!-- Uncomment Lister After LoginWithDataProvider check -->
+	<!-- <listeners> -->
+	<!-- <listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener> -->
+	<!-- </listeners> -->
+	
+		<test name="VerifyVideoStreaming">
+		<classes>
+			<class name="com.umbrella.Amazon.GuiTests.VerifyVideoStreaming">
+				<methods>
+					<include name="verifyYouTube" />
+					<exclude name="verifyChartTwo" />
+					<exclude name="verifyChartThree" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+<!-- 	<test name="VerifyVariousCharts"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.umbrella.Amazon.GuiTests.VerifyChartAndGraphs"> -->
+<!-- 				<methods> -->
+<!-- 					<include name="verifyChartOne" /> -->
+<!-- 					<exclude name="verifyChartTwo" /> -->
+<!-- 					<exclude name="verifyChartThree" /> -->
+<!-- 				</methods> -->
+<!-- 			</class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+	<!-- <test name="VerifyCarouselContainsDifferentItems"> -->
+	<!-- <classes> -->
+	<!-- <class -->
+	<!-- name="com.umbrella.Amazon.GuiTests.VerifyCarouselContainsDifferentItems" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifyCarouselRotation"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GuiTests.VerifyCarouselRotation" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifyImageAreBrokenInvalid"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GuiTests.VerifyImageAreBrokenInvalid" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifyAllLinksAreActive"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.GuiTests.VerifyAllLinksAreActive" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="Regression Suite VerifyLowestFirstPriceFilter"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.loginpage.VerifyLowestFirstPriceFilter" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+</suite> <!-- Suite -->
+
+
+
+

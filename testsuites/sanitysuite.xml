@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Sanity Suite" parallel="tests" thread-count="10">
+	<!-- <suite name=" Sanity Suite"> -->
+	<listeners>
+	<listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener>
+	</listeners>	
+	<test name="Sanity Suite Functional Tests">
+		<classes>
+			<class name="com.umbrella.Amazon.loginpage.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Sanity Suite VerifyProductCounts">
+		<classes>
+			<class name="com.umbrella.Amazon.loginpage.VerifyProductCounts" />
+		</classes>
+	</test>
+	<test name="Sanity Suite VerifyLowestFirstPriceFilter">
+		<classes>
+			<class name="com.umbrella.Amazon.loginpage.VerifyLowestFirstPriceFilter" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
+
+
+
+

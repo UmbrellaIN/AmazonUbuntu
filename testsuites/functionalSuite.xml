@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Functional Suite" parallel="false" thread-count="10" >
+<!-- The below line executes test on the same browser instance one by One -->
+<!-- <suite name=" Functional Suite" parallel="instances" thread-count="10" group-by-instances="true"> -->
+
+<!-- <suite name=" Functional Suite" parallel="tests" thread-count="10"> -->
+
+
+
+	<!-- Uncomment Lister After LoginWithDataProvider check -->
+	<!-- <listeners> -->
+	<!-- <listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener> -->
+	<!-- </listeners> -->
+
+<!-- 	<test name="VerifyTableFuctionality"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.umbrella.Amazon.FunctionalTest.VerifyTableFuctionality" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+
+	<test name="VerifyModalsAreWorking">
+		<classes>
+			<class
+				name="com.umbrella.Amazon.FunctionalTest.VerifyModalsAreWorking" />
+		</classes>
+	</test>
+	
+<!-- 	<test name="VerifySearchFunctionality"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="com.umbrella.Amazon.FunctionalTest.VerifyCouponCodeWorksDirectly" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+	<!-- <test name="VerifyentriesinExportedCSVfile"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.FunctionalTest.VerifyentriesinExportedCSVfile" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="verifyDataIsSortedAccordingtoDateASCDESC"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.FunctionalTest.VerifyDataIsSortedAccordingtoDateASCDESC" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifyDisabledFieldsAndBlankFields"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.FunctionalTest.VerifyDisabledFieldsAndBlankFields" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifyAutoSuggestions"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.FunctionalTest.VerifyAutoSuggestions" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifySearchFunctionality"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.FunctionalTest.VerifySearchFunctionality" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="Regression Suite VerifyLowestFirstPriceFilter"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.loginpage.VerifyLowestFirstPriceFilter" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+</suite> <!-- Suite -->
+
+
+
+

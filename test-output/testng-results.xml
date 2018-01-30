@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name=" GUI Suite" duration-ms="20525" started-at="2018-01-29T18:41:49Z" finished-at="2018-01-29T18:42:09Z">
+    <groups>
+    </groups>
+    <test name="VerifyVideoStreaming" duration-ms="20525" started-at="2018-01-29T18:41:49Z" finished-at="2018-01-29T18:42:09Z">
+      <class name="com.umbrella.Amazon.GuiTests.VerifyVideoStreaming">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.umbrella.Amazon.GuiTests.VerifyVideoStreaming@5e25a92e]" name="launchBrowser" is-config="true" duration-ms="9832" started-at="2018-01-30T00:11:49Z" finished-at="2018-01-30T00:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.umbrella.Amazon.GuiTests.VerifyVideoStreaming@5e25a92e]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2018-01-30T00:11:59Z" finished-at="2018-01-30T00:11:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.umbrella.Amazon.GuiTests.VerifyVideoStreaming.verifyYouTube()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyYouTube()[pri:0, instance:com.umbrella.Amazon.GuiTests.VerifyVideoStreaming@5e25a92e]" name="verifyYouTube" duration-ms="9862" started-at="2018-01-30T00:11:59Z" finished-at="2018-01-30T00:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYouTube -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.umbrella.Amazon.GuiTests.VerifyVideoStreaming@5e25a92e]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-01-30T00:12:09Z" finished-at="2018-01-30T00:12:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyYouTube status=SUCCESS method=VerifyVideoStreaming.verifyYouTube()[pri:0, instance:com.umbrella.Amazon.GuiTests.VerifyVideoStreaming@5e25a92e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.umbrella.Amazon.GuiTests.VerifyVideoStreaming@5e25a92e]" name="endTest" is-config="true" duration-ms="801" started-at="2018-01-30T00:12:09Z" finished-at="2018-01-30T00:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.umbrella.Amazon.GuiTests.VerifyVideoStreaming -->
+    </test> <!-- VerifyVideoStreaming -->
+  </suite> <!--  GUI Suite -->
+  <suite name="Master test suite" duration-ms="0" started-at="2018-01-29T18:42:10Z" finished-at="2018-01-29T18:42:10Z">
+    <groups>
+    </groups>
+  </suite> <!-- Master test suite -->
+</testng-results>

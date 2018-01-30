@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [ GUI Suite]" parallel="tests">
+  <test thread-count="2" name="VerifyVideoStreaming(failed)" parallel="tests">
+    <classes>
+      <class name="com.umbrella.Amazon.GuiTests.VerifyVideoStreaming">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="endTest"/>
+          <include name="verifyYouTube"/>
+          <include name="launchBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.umbrella.Amazon.GuiTests.VerifyVideoStreaming -->
+    </classes>
+  </test> <!-- VerifyVideoStreaming(failed) -->
+</suite> <!-- Failed suite [ GUI Suite] -->

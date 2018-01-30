@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Regression Suite" parallel="tests" thread-count="1">
+
+	<!-- Uncomment Lister After LoginWithDataProvider check -->
+	<listeners>
+		<listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener>
+	</listeners>
+
+	<test name="Regression Suite Functional Tests">
+		<classes>
+			<class name="com.umbrella.Amazon.loginpage.LoginTest" />
+		</classes>
+	</test>
+
+	<!-- <test name="Regression Suite VerifyProductCounts"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.loginpage.LoginWithDataProvider" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="Regression Suite VerifyProductCounts"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.loginpage.VerifyProductCounts" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+	<!-- <test name="Regression Suite VerifyLowestFirstPriceFilter"> -->
+	<!-- <classes> -->
+	<!-- <class name="com.umbrella.Amazon.loginpage.VerifyLowestFirstPriceFilter" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+</suite> <!-- Suite -->
+
+
+
+
