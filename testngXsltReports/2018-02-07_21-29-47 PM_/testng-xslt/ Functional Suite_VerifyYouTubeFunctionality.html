@@ -1,0 +1,589 @@
+<html xmlns:math="http://exslt.org/math" xmlns:testng="http://testng.org">
+   <head>
+      <title>TestNG Results</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8"></meta>
+      <meta http-equiv="pragma" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="max-age=0"></meta>
+      <meta http-equiv="cache-control" content="no-cache"></meta>
+      <meta http-equiv="cache-control" content="no-store"></meta>
+      <LINK rel="stylesheet" href="style.css"></LINK>
+      <script type="text/javascript" src="main.js"></script>
+   </head>
+   <body>
+      <table width="100%" style="font-size: 16px; margin-bottom: 10px;" cellspacing="1">
+         <tr>
+            <td width="100%">
+               Test case
+               
+               <b>VerifyYouTubeFunctionality</b>
+            </td>
+            <td style="background-color: #FFBBBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td style="background-color: lightgreen; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td style="background-color: #FFFFBB; padding: 3px 3px 3px 0;" align="center">
+               <div style="width: 50px;">0</div>
+            </td>
+            <td align="center" style="background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">1</div>
+            </td>
+            <td align="center"
+                style="font-weight: bold; background-color: #eaf0f7; padding: 3px 3px 3px 0;">
+               <div style="width: 50px;">0%</div>
+            </td>
+            <td style="background-color: #eaf0f7; padding: 3px 3px 3px 0;" align="center"
+                nowrap="true">55s
+               
+            </td>
+         </tr>
+      </table>
+      <div style="width: 200px;">
+         <label for="groupMethodsCheckBox" style="font-weight: bold; margin: 0;">
+            <input id="groupMethodsCheckBox" type="checkbox" onclick="switchTestMethodsView(this)"
+                   checked=""></input>
+            Group by class
+            
+         </label>
+         <br></br>
+         <label for="methodsFilter_ALL" style="font-weight: bold; margin: 0;">
+            <input id="methodsFilter_ALL" type="checkbox"
+                   onclick="testMethodsFilterChanged(this, 'ALL')"
+                   checked=""></input>
+            All
+            
+         </label>
+      </div>
+      <label for="methodsFilter_FAIL" style="margin-left: 20px;">
+         <input id="methodsFilter_FAIL" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'FAIL')"
+                checked=""></input>
+         Failed
+         
+      </label>
+      <label for="methodsFilter_PASS">
+         <input id="methodsFilter_PASS" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'PASS')"
+                checked=""></input>
+         Passed
+         
+      </label>
+      <label for="methodsFilter_SKIP">
+         <input id="methodsFilter_SKIP" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'SKIP')"
+                checked=""></input>
+         Skipped
+         
+      </label>
+      <label for="methodsFilter_CONF">
+         <input id="methodsFilter_CONF" type="checkbox"
+                onclick="testMethodsFilterChanged(this, 'CONF')"
+                checked=""></input>
+         Config
+         
+      </label>
+      <br></br>
+      <div id="testMethodsByStatus" style="display: none;">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byStatus_failed_FAIL1_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byStatus_failed_FAIL1_details')">SkipAddTest()</a>
+               </td>
+               <td nowrap="true">21:30:04</td>
+               <td nowrap="true" align="right">41s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byStatus_failed_FAIL1_exception')">org.awaitility.core.ConditionTimeoutException: 
+                     Condition with alias 'Avertisent can not be skipiied before 5 seconds' didn't complete within 20 seconds because lambda expression
+                     in com.umbrella.Amazon.PageFactory.YouTube that uses org.openqa.selenium.WebElement: expected "Skip Ad" but was "".
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byStatus_failed_FAIL1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>SkipAddTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>SkipAddTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:46
+                     </div>
+                     <div>
+                        <b>Duration: </b>41s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byStatus_failed_FAIL1_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.awaitility.core.ConditionTimeoutException: Condition with alias 'Avertisent can not be skipiied before 5 seconds' didn't
+                        complete within 20 seconds because lambda expression in com.umbrella.Amazon.PageFactory.YouTube that uses org.openqa.selenium.WebElement:
+                        expected "Skip Ad" but was "".at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)at org.awaitility.core.AbstractHamcrestCondition.await(AbstractHamcrestCondition.java:89)at
+                        org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:619)at
+                        com.umbrella.Amazon.PageFactory.YouTube.skipAdd(YouTube.java:131)at com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest(VerifyYouTubeFunctionality.java:37)at
+                        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at
+                        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at
+                        org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at
+                        org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at
+                        org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at
+                        org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at
+                        org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at
+                        java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at
+                        java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_launchBrowser_byStatus_passed_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_launchBrowser_byStatus_passed_PASS1_details')">launchBrowser()</a>
+               </td>
+               <td nowrap="true">21:29:53</td>
+               <td nowrap="true" align="right">11s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_launchBrowser_byStatus_passed_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>launchBrowser
+                     </div>
+                     <div>
+                        <b>Signature: </b>launchBrowser()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:29:53
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>11s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_beforeMethod_byStatus_passed_PASS2_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_beforeMethod_byStatus_passed_PASS2_details')">beforeMethod(public void com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest() throws java.lang.InterruptedException)</a>
+               </td>
+               <td nowrap="true">21:30:04</td>
+               <td nowrap="true" align="right">5 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_beforeMethod_byStatus_passed_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        public void com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest() throws java.lang.InterruptedException
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>5 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_afterMethod_byStatus_passed_PASS3_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_afterMethod_byStatus_passed_PASS3_details')">afterMethod([TestResult name=SkipAddTest status=FAILURE method=VerifyYouTubeFunctionality.SkipAddTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     output={null}])
+                  </a>
+               </td>
+               <td nowrap="true">21:30:46</td>
+               <td nowrap="true" align="right">925 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_afterMethod_byStatus_passed_PASS3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod(org.testng.ITestResult)[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        [TestResult name=SkipAddTest status=FAILURE method=VerifyYouTubeFunctionality.SkipAddTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                        output={null}]
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:46
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:47
+                     </div>
+                     <div>
+                        <b>Duration: </b>925 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_endTest_byStatus_passed_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_endTest_byStatus_passed_PASS4_details')">endTest()</a>
+               </td>
+               <td nowrap="true">21:30:47</td>
+               <td nowrap="true" align="right">1s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_endTest_byStatus_passed_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>endTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>endTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:47
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:48
+                     </div>
+                     <div>
+                        <b>Duration: </b>1s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+      </div>
+      <div id="testMethodsByClass">
+         <table class="testMethodsTable" cellpadding="0" cellspacing="0">
+            <tr>
+               <td colspan="4">
+                  <h3 style="display: inline;">com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality</h3>
+               </td>
+            </tr>
+            <tr class="methodsTableHeader">
+               <td width="100%">Name</td>
+               <td nowrap="true">Started</td>
+               <td nowrap="true">Duration</td>
+               <td>Exception</td>
+            </tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_launchBrowser_byClass_PASS1_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_launchBrowser_byClass_PASS1_details')">launchBrowser()</a>
+               </td>
+               <td nowrap="true">21:29:53</td>
+               <td nowrap="true" align="right">11s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_launchBrowser_byClass_PASS1_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>launchBrowser
+                     </div>
+                     <div>
+                        <b>Signature: </b>launchBrowser()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:29:53
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>11s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_beforeMethod_byClass_PASS2_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_beforeMethod_byClass_PASS2_details')">beforeMethod(public void com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest() throws java.lang.InterruptedException)</a>
+               </td>
+               <td nowrap="true">21:30:04</td>
+               <td nowrap="true" align="right">5 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_beforeMethod_byClass_PASS2_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>beforeMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        public void com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest() throws java.lang.InterruptedException
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>Duration: </b>5 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byClass_FAIL3_row"
+                class="testMethodStatusFAIL">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byClass_FAIL3_details')">SkipAddTest()</a>
+               </td>
+               <td nowrap="true">21:30:04</td>
+               <td nowrap="true" align="right">41s
+                  
+               </td>
+               <td nowrap="true">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byClass_FAIL3_exception')">org.awaitility.core.ConditionTimeoutException: 
+                     Condition with alias 'Avertisent can not be skipiied before 5 seconds' didn't complete within 20 seconds because lambda expression
+                     in com.umbrella.Amazon.PageFactory.YouTube that uses org.openqa.selenium.WebElement: expected "Skip Ad" but was "".
+                     
+                  </a>
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byClass_FAIL3_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>SkipAddTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>SkipAddTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:04
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:46
+                     </div>
+                     <div>
+                        <b>Duration: </b>41s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_SkipAddTest_byClass_FAIL3_exception"
+                       class="testMethodDetails">
+                     <pre style="padding: 5px; margin: 0;">org.awaitility.core.ConditionTimeoutException: Condition with alias 'Avertisent can not be skipiied before 5 seconds' didn't
+                        complete within 20 seconds because lambda expression in com.umbrella.Amazon.PageFactory.YouTube that uses org.openqa.selenium.WebElement:
+                        expected "Skip Ad" but was "".at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)at org.awaitility.core.AbstractHamcrestCondition.await(AbstractHamcrestCondition.java:89)at
+                        org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:619)at
+                        com.umbrella.Amazon.PageFactory.YouTube.skipAdd(YouTube.java:131)at com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest(VerifyYouTubeFunctionality.java:37)at
+                        sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at
+                        sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at
+                        org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at
+                        org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at
+                        org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at
+                        org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at
+                        org.testng.SuiteRunner.access$000(SuiteRunner.java:40)at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)at
+                        java.util.concurrent.FutureTask.run(FutureTask.java:266)at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)at
+                        java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)at java.lang.Thread.run(Thread.java:748)
+                     </pre>
+                  </div>
+               </td>
+            </tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_afterMethod_byClass_PASS4_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_afterMethod_byClass_PASS4_details')">afterMethod([TestResult name=SkipAddTest status=FAILURE method=VerifyYouTubeFunctionality.SkipAddTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     output={null}])
+                  </a>
+               </td>
+               <td nowrap="true">21:30:46</td>
+               <td nowrap="true" align="right">925 ms
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_afterMethod_byClass_PASS4_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>afterMethod
+                     </div>
+                     <div>
+                        <b>Signature: </b>afterMethod(org.testng.ITestResult)[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Parameters: </b>
+                        
+                        [TestResult name=SkipAddTest status=FAILURE method=VerifyYouTubeFunctionality.SkipAddTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                        output={null}]
+                        
+                        
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:46
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:47
+                     </div>
+                     <div>
+                        <b>Duration: </b>925 ms
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+            <tr id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_endTest_byClass_PASS5_row"
+                class="testMethodStatusPASS testMethodStatusCONF">
+               <td width="100%" class="firstMethodCell">
+                  <a onclick="toggleDetailsVisibility('com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_endTest_byClass_PASS5_details')">endTest()</a>
+               </td>
+               <td nowrap="true">21:30:47</td>
+               <td nowrap="true" align="right">1s
+                  
+               </td>
+               <td nowrap="true">
+                   
+                  
+               </td>
+            </tr>
+            <tr>
+               <td colspan="4" class="detailsBox">
+                  <div id="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality_endTest_byClass_PASS5_details"
+                       class="testMethodDetails">
+                     <div>
+                        <b>Name: </b>endTest
+                     </div>
+                     <div>
+                        <b>Signature: </b>endTest()[pri:0, instance:com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality@5e25a92e]
+                     </div>
+                     <div>
+                        <b>Start time: </b>21:30:47
+                     </div>
+                     <div>
+                        <b>End time: </b>21:30:48
+                     </div>
+                     <div>
+                        <b>Duration: </b>1s
+                        
+                     </div>
+                  </div>
+               </td>
+            </tr>
+            <tr></tr>
+         </table>
+         <br></br>
+      </div>
+      <div style="margin-top: 15px; color: gray; text-align: center; font-size: 9px;">
+         Generated with
+         
+         <a href="http://code.google.com/p/testng-xslt/" style="color: #8888aa;"
+            target="_blank">
+            TestNG XSLT
+            
+         </a>
+      </div>
+   </body>
+</html>

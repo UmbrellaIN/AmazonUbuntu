@@ -8,12 +8,23 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7"> GUI Suite</th></tr>
-<tr><td><a href="#t0">VerifyVideoStreaming</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">20,525</td><td></td><td></td></tr>
+<tr><th colspan="7"> Functional Suite</th></tr>
+<tr><td><a href="#t0">VerifyYouTubeFunctionality</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">55,460</td><td></td><td></td></tr>
 <tr><th colspan="7">Master test suite</th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4"> GUI Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">VerifyVideoStreaming &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.umbrella.Amazon.GuiTests.VerifyVideoStreaming</td><td><a href="#m0">verifyYouTube</a></td><td rowspan="1">1517251319333</td><td rowspan="1">9862</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4"> Functional Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">VerifyYouTubeFunctionality &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality</td><td><a href="#m0">SkipAddTest</a></td><td rowspan="1">1518019204850</td><td rowspan="1">41441</td></tr></tbody>
 <tbody><tr><th colspan="4">Master test suite</th></tr></tbody></table>
-<h2>VerifyVideoStreaming</h2><h3 id="m0">com.umbrella.Amazon.GuiTests.VerifyVideoStreaming#verifyYouTube</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>VerifyYouTubeFunctionality</h2><h3 id="m0">com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality#SkipAddTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.awaitility.core.ConditionTimeoutException: Condition with alias &apos;Avertisent can not be skipiied before 5 seconds&apos; didn&apos;t complete within 20 seconds because lambda expression in com.umbrella.Amazon.PageFactory.YouTube that uses org.openqa.selenium.WebElement: expected &quot;Skip Ad&quot; but was &quot;&quot;.
+	at org.awaitility.core.ConditionAwaiter.await(ConditionAwaiter.java:136)
+	at org.awaitility.core.AbstractHamcrestCondition.await(AbstractHamcrestCondition.java:89)
+	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:840)
+	at org.awaitility.core.ConditionFactory.until(ConditionFactory.java:619)
+	at com.umbrella.Amazon.PageFactory.YouTube.skipAdd(YouTube.java:131)
+	at com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality.SkipAddTest(VerifyYouTubeFunctionality.java:37)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

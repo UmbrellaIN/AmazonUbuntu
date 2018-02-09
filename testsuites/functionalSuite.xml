@@ -1,39 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name=" Functional Suite" parallel="false" thread-count="10" >
-<!-- The below line executes test on the same browser instance one by One -->
-<!-- <suite name=" Functional Suite" parallel="instances" thread-count="10" group-by-instances="true"> -->
+<suite name=" Functional Suite" parallel="tests" thread-count="10">
+	<!-- The below line executes test on the same browser instance one by One -->
+	<!-- <suite name=" Functional Suite" parallel="instances" thread-count="10" 
+		group-by-instances="true"> -->
 
-<!-- <suite name=" Functional Suite" parallel="tests" thread-count="10"> -->
-
-
+	<!-- <suite name=" Functional Suite" parallel="tests" thread-count="10"> -->
 
 	<!-- Uncomment Lister After LoginWithDataProvider check -->
 	<!-- <listeners> -->
 	<!-- <listener class-name="com.umbrella.Amazon.listeners.RetryListener"></listener> -->
 	<!-- </listeners> -->
 
-<!-- 	<test name="VerifyTableFuctionality"> -->
-<!-- 		<classes> -->
-<!-- 			<class -->
-<!-- 				name="com.umbrella.Amazon.FunctionalTest.VerifyTableFuctionality" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
-	
-
-	<test name="VerifyModalsAreWorking">
+	<test name="VerifyYouTubeFunctionality">
 		<classes>
-			<class
-				name="com.umbrella.Amazon.FunctionalTest.VerifyModalsAreWorking" />
+			<class name="com.umbrella.Amazon.FunctionalTest.VerifyYouTubeFunctionality">
+				<methods>
+					<include name="SkipAddTest" />
+					<exclude name="verifyJQueryListBox" />
+					<exclude name="verifyJQueryListBox" />
+					<exclude name="verifyJQueryListBox" />
+					<exclude name="verifyBootStrapListBox" />
+					<exclude name="verifyJQueryListBox" />
+				</methods>
+			</class>
 		</classes>
 	</test>
-	
-<!-- 	<test name="VerifySearchFunctionality"> -->
-<!-- 		<classes> -->
-<!-- 			<class -->
-<!-- 				name="com.umbrella.Amazon.FunctionalTest.VerifyCouponCodeWorksDirectly" /> -->
-<!-- 		</classes> -->
-<!-- 	</test> -->
+
+	<!-- <test name="VerifyTableFuctionality"> -->
+	<!-- <classes> -->
+	<!-- <class -->
+	<!-- name="com.umbrella.Amazon.FunctionalTest.VerifyTableFuctionality" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+
+	<!-- <test name="VerifyModalsAreWorking"> -->
+	<!-- <classes> -->
+	<!-- <class -->
+	<!-- name="com.umbrella.Amazon.FunctionalTest.VerifyModalsAreWorking" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
+
+	<!-- <test name="VerifySearchFunctionality"> -->
+	<!-- <classes> -->
+	<!-- <class -->
+	<!-- name="com.umbrella.Amazon.FunctionalTest.VerifyCouponCodeWorksDirectly" 
+		/> -->
+	<!-- </classes> -->
+	<!-- </test> -->
 
 	<!-- <test name="VerifyentriesinExportedCSVfile"> -->
 	<!-- <classes> -->

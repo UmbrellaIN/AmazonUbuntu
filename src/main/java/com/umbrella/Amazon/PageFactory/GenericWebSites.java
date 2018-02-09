@@ -92,7 +92,7 @@ public class GenericWebSites extends TestBase {
 		By newAjaxcontrol = By.xpath("html/body/table/tbody/tr[3]/td/div");
 		Wait<WebDriver> newwait = new FluentWait<WebDriver>(driver).withTimeout(60, TimeUnit.SECONDS)
 				.pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
-		newwait.until(ExpectedConditions.presenceOfElementLocated((newAjaxcontrol)));
+		//newwait.until(ExpectedConditions.presenceOfElementLocated((newAjaxcontrol)));
 		String textafterajaxcall = ((WebElement) newAjaxcontrol).getText();
 		log.info("+++++++++++++textafterajaxcall++++++++" + textafterajaxcall);
 
@@ -346,7 +346,7 @@ public class GenericWebSites extends TestBase {
 		// TimeUnit.MILLISECONDS);
 		FluentWait<WebDriver> wait = new FluentWait<>(driver).withTimeout(5000, TimeUnit.SECONDS)
 				.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
-		wait.until(ExpectedConditions.elementToBeClickable(rightclick));
+		//wait.until(ExpectedConditions.elementToBeClickable(rightclick));
 		rightclick.click();
 
 		log.info(" Number of Items in Second List after Ist click is " + elementsInSecondListBox());
@@ -376,7 +376,7 @@ public class GenericWebSites extends TestBase {
 			WebElement addButton = driver.findElement(By.xpath("//button[text()='Add']"));
 			FluentWait<WebDriver> wait = new FluentWait<>(driver).withTimeout(5000, TimeUnit.SECONDS)
 					.pollingEvery(1, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
-			wait.until(ExpectedConditions.elementToBeClickable(addButton));
+			//wait.until(ExpectedConditions.elementToBeClickable(addButton));
 			addButton.click();
 			try {
 				Thread.sleep(3000);
